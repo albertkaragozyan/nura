@@ -1,3 +1,4 @@
+import Anywhere from "./components/anywhere";
 import Header from "./components/header";
 import HearingProfile from "./components/hearingProfile";
 import SomeProducts from "./components/someProducts";
@@ -9,6 +10,7 @@ export default function Home() {
         <Header />
         <SomeProducts />
         <HearingProfile />
+        <Anywhere />
       </div>
     </>
   );

@@ -18,7 +18,7 @@ function HearingProfile() {
     <div className="flex justify-center h-[984px] bg-[linear-gradient(138deg,_rgba(51,51,245,1)_17%,_rgba(51,129,245,1)_64%,_rgba(51,129,245,1)_100%)]">
       <div className="flex">
         <div className="w-fit pt-[15px] flex justify-center">
-          <Image className="absolute object-cover" src={phoneScreen} alt="Phone-screen" />
+          <Image className="absolute object-cover z-10" src={phoneScreen} alt="Phone-screen" />
           <Image className="relative z-[100] h-[1104px] object-cover" src={phone} alt="Phone" />
         </div>
         <div className="mt-[187px]">
