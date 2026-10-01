@@ -8,6 +8,7 @@ import localFont from "next/font/local";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { useCart } from "../components/CartContext";
+import Link from 'next/link';
 
 const spaceGrotesk = localFont({
     src: "../fonts/SpaceGrotesk-Regular.ttf",
@@ -32,7 +33,7 @@ function SomeProducts() {
         <div className="flex flex-col gap-[57px] mb-[100px]">
             <div className="mt-[91px] flex items-baseline gap-[507px] justify-center">
                 <div className={`${spaceGrotesk.className} text-white text-[65px]`}>Featured discounts</div>
-                <div className={`${baiJamjuree.className} text-[#7DFB5D] text-[16px] cursor-pointer`}>WIEW ALL PRODUCTS <span className="text-[20px]">→</span></div>
+                <Link href="/products" className={`${baiJamjuree.className} text-[#7DFB5D] text-[16px] cursor-pointer`}>WIEW ALL PRODUCTS <span className="text-[20px]">→</span></Link>
             </div>
             <div className="flex gap-[20px] justify-center">
                 {randomProducts.map((product) => {
