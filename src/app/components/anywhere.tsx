@@ -7,7 +7,7 @@ function Anywhere() {
         <div>
             <div className="relative flex justify-center items-center">
                 <Image src={parrot} alt="" />
-                <div className="absolute">
+                <div data-aos="fade-left" className="absolute">
                     <div className="text-white pl-[709px]">
                         <p className="flex flex-col text-[93px] leading-none"><span>Play from</span>
                             <span>any device.</span></p>

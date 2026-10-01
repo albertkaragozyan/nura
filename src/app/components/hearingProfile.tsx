@@ -21,7 +21,7 @@ function HearingProfile() {
           <Image className="absolute object-cover z-10" src={phoneScreen} alt="Phone-screen" />
           <Image className="relative z-[100] h-[1104px] object-cover" src={phone} alt="Phone" />
         </div>
-        <div className="mt-[187px]">
+        <div data-aos="fade-left" className="mt-[187px]">
           <div>
             <p className={`${spaceGrotesk.className} text-[93px] text-white flex flex-col leading-none`}><span>For your</span><span>ears only.</span></p>
             <p className={`${spaceGrotesk.className} text-[93px] text-white`}></p>
