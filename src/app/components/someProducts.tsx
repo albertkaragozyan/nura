@@ -44,7 +44,12 @@ function SomeProducts() {
                             <div className="flex flex-col justify-center items-center">
                                 <div className={`${spaceGrotesk.className} text-[36px] leading-none text-center mt-[20px]`}>{product.name}</div>
                                 <div>${product.price}</div>
-                                <button onClick={addToCart} className={`${baiJamjuree.className} cursor-pointer hover:bg-blue-500 transition duration-500 mt-[32px] rounded-[50px] text-[16px] py-[8px] px-[18px] bg-[#3333F5] w-fit text-white `}>ADD TO CART <span className="text-[20px]">→</span></button>
+                                <button onClick={() => addToCart({
+                                    id: product.id,
+                                    title: product.name,
+                                    price: Number(product.price),
+                                    image: product.image,
+                                })} className={`${baiJamjuree.className} cursor-pointer hover:bg-blue-500 transition duration-500 mt-[32px] rounded-[50px] text-[16px] py-[8px] px-[18px] bg-[#3333F5] w-fit text-white `}>ADD TO CART <span className="text-[20px]">→</span></button>
                             </div>
                         </div>
                     )

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import nura from "../images/nura.png";
 import { useCart } from "./CartContext";
+import Cart from "./cart";
 
 function Header() {
     const { cartNumber } = useCart();
@@ -20,7 +21,7 @@ function Header() {
                                 <Link href="/products">Products</Link>
                             </li>
                             <li>
-                                <Link href="/">Subscription</Link>
+                                <Link href="/subscription">Subscription</Link>
                             </li>
                             <li>
                                 <Link href="/">Why Nura?</Link>
@@ -31,9 +32,7 @@ function Header() {
                         </ul>
                     </nav>
                 </div>
-                <div className="text-white text-[23px] cursor-pointer">
-                    Cart ({cartNumber})
-                </div>
+                <Cart />
             </div>
         </header>
     );

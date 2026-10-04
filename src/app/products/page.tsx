@@ -25,12 +25,12 @@ export default function Products() {
             .then((res) => res.json())
             .then((res) => setProducts(res))
     }, [])
-    
+
     const filteredProducts = products.filter(
         (e: any) => e.name.toLowerCase().includes(query?.toLowerCase() || "")
     )
     const { addToCart } = useCart();
-    
+
     return (
         <div className="my-[100px] flex flex-col justify-center items-center">
             <h1 className={`${baiJamjuree.className} text-center font-bold text-[50px] text-white`}>Products</h1>
@@ -40,7 +40,7 @@ export default function Products() {
                 <button className="border-2 border-white rounded-[20px] w-[70px] text-[white] h-[35px]" type="submit">Search</button>
             </form>
 
-            <div className="w-[1440px] flex flex-wrap justify-center items-center gap-[15px]">
+            <div className="max-w-[1440px] flex flex-wrap justify-center items-center gap-[15px]">
                 {filteredProducts.map((e: any) => {
                     return (
                         <div key={e.id} data-aos="fade-right" className="relative overflow-hidden w-[313px] h-fit pb-[30px] bg-[#E5E5E5] rounded-[20px]">
@@ -49,7 +49,12 @@ export default function Products() {
                             <div className="flex flex-col justify-center items-center">
                                 <div className={`${spaceGrotesk.className} text-[36px] leading-none text-center mt-[20px]`}>{e.name}</div>
                                 <div>${e.price}</div>
-                                <button onClick={addToCart} className={`${baiJamjuree.className} cursor-pointer hover:bg-blue-500 transition duration-500 mt-[32px] rounded-[50px] text-[16px] py-[8px] px-[18px] bg-[#3333F5] w-fit text-white `}>SHOP NOW <span className="text-[20px]">→</span></button>
+                                <button onClick={() => addToCart({
+                                    id: e.id,
+                                    title: e.name,
+                                    price: Number(e.price),
+                                    image: e.image,
+                                })} className={`${baiJamjuree.className} cursor-pointer hover:bg-blue-500 transition duration-500 mt-[32px] rounded-[50px] text-[16px] py-[8px] px-[18px] bg-[#3333F5] w-fit text-white `}>SHOP NOW <span className="text-[20px]">→</span></button>
                             </div>
                         </div>
                     )
