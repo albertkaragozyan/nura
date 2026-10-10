@@ -11,23 +11,17 @@ function Header() {
     return (
         <header className="absolute top-0 z-10 w-[100%] flex justify-center items-center">
             <div className="w-[1440px] flex justify-between items-center h-[80px] px-[30px]">
-                <div className="flex gap-[44px] items-center">
+                <div className="flex gap-[20px] sm:gap-[44px] items-center">
                     <Link href="/">
-                        <Image className="w-[100px] mt-[4px]" src={nura} alt="nura" />
+                        <Image className="w-[70px] sm:w-[100px] mt-[1px] sm:mt-[4px]" src={nura} alt="nura" />
                     </Link>
                     <nav>
-                        <ul className="flex gap-[40px] text-white text-[24px] items-center">
+                        <ul className="flex gap-[20px] sm:gap-[40px] text-white text-[16px] sm:text-[24px] items-center">
                             <li>
                                 <Link href="/products">Products</Link>
                             </li>
                             <li>
                                 <Link href="/subscription">Subscription</Link>
-                            </li>
-                            <li>
-                                <Link href="/">Why Nura?</Link>
-                            </li>
-                            <li>
-                                <Link href="/">Support</Link>
                             </li>
                         </ul>
                     </nav>

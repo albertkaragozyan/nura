@@ -18,7 +18,7 @@ function Subscription() {
                         <p>✓ 5 projects</p>
                         <p>✓ Monthly updates</p>
                     </div>
-                    <button className="mt-8 w-full rounded-xl bg-blue-500 py-3 font-semibold text-white transition hover:bg-blue-600">Get Basic</button>
+                    <button className="cursor-pointer mt-8 w-full rounded-xl bg-blue-500 py-3 font-semibold text-white transition hover:bg-blue-600">Get Basic</button>
                 </div>
                 <div className="flex flex-col rounded-2xl border border-white/10 bg-zinc-900 p-8 shadow-lg transition duration-300 hover:-translate-y-2 hover:border-white/20">
                     <p className="text-2xl font-bold text-white">Pro</p>
@@ -34,7 +34,7 @@ function Subscription() {
                         <p>✓ 25 projects</p>
                         <p>✓ Frequent updates</p>
                     </div>
-                    <button className="mt-8 w-full rounded-xl bg-blue-500 py-3 font-semibold text-white transition hover:bg-blue-600">Get Pro</button>
+                    <button className="cursor-pointer mt-8 w-full rounded-xl bg-blue-500 py-3 font-semibold text-white transition hover:bg-blue-600">Get Pro</button>
                 </div>
                 <div className="flex flex-col rounded-2xl border border-white/10 bg-zinc-900 p-8 shadow-lg transition duration-300 hover:-translate-y-2 hover:border-white/20">
                     <p className="text-2xl font-bold text-white">Premium</p>
@@ -50,7 +50,7 @@ function Subscription() {
                         <p>✓ Unlimited users</p>
                         <p>✓ Exclusive updates</p>
                     </div>
-                    <button className="mt-8 w-full rounded-xl bg-blue-500 py-3 font-semibold text-white transition hover:bg-blue-600">Get Premium</button>
+                    <button className="cursor-pointer mt-8 w-full rounded-xl bg-blue-500 py-3 font-semibold text-white transition hover:bg-blue-600">Get Premium</button>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@ function NuraAd() {
     return (
         <div>
             <div className="flex justify-center items-center">
-                <iframe width="1312" height="737" src="https://www.youtube.com/embed/roslURFwPnI" title="NURA AD" className="border-0 mt-[64px] mb-[140px]" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe src="https://www.youtube.com/embed/roslURFwPnI" title="NURA AD" className="w-[600px] h-[500px] sm:w-[1312px] sm:h-[737px] border-0 mt-[64px] mb-[64px] sm:mb-[140px]" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
         </div>
     )

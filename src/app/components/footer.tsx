@@ -10,12 +10,12 @@ const spaceGrotesk = localFont({
 function Footer() {
     return (
         <div className="flex flex-col justify-center items-center bg-[#000000]">
-            <div className="flex mt-[90px]">
-                <div className="flex flex-col gap-[30px] w-[355px]">
-                    <Image className="w-[160px]" src={nura} alt="nura" />
-                    <p className={` ${spaceGrotesk.className} text-[#FFFFFF] text-[24px] w-[311px]`}>Nura designs headphones tuned to you. Bringing you closer to music with personalised sound.</p>
+            <div className="flex mt-[40px] sm:mt-[90px] gap-[18px]">
+                <div className="flex flex-col gap-[10px] sm:gap-[30px] sm:w-[355px]">
+                    <Image className="sm:w-[160px]" src={nura} alt="nura" />
+                    <p className={` ${spaceGrotesk.className} text-[#FFFFFF] text-[16px] sm:text-[24px] w-[160px] sm:w-[311px]`}>Nura designs headphones tuned to you. Bringing you closer to music with personalised sound.</p>
                 </div>
-                <div className="w-[240px]">
+                <div className="sm:w-[200px]">
                     <p className={`${spaceGrotesk.className} text-[#737373] text-[16px]`}>SHOP</p>
                     <div className="flex flex-col gap-[9px] text-[#EBEBEB]">
                         <p>NuraTrue Pro</p>
@@ -28,7 +28,7 @@ function Footer() {
                         <p>Subscription</p>
                     </div>
                 </div>
-                <div className="w-[240px]">
+                <div className="sm:w-[200px]">
                     <p className={`${spaceGrotesk.className} text-[#737373] text-[16px]`}>INFO</p>
                     <div className="flex flex-col gap-[9px] text-[#EBEBEB]">
                         <p>Why Nura?</p>
@@ -38,14 +38,14 @@ function Footer() {
                         <p>Patets</p>
                     </div>
                 </div>
-                <div className="w-[240px]">
+                <div className="sm:w-[200px]">
                     <p className={`${spaceGrotesk.className} text-[#737373] text-[16px]`}>SUPPORT</p>
                     <div className="flex flex-col gap-[9px] text-[#EBEBEB]">
                         <p>Help Centre</p>
                         <p>Contact Us</p>
                     </div>
                 </div>
-                <div className="w-[240px]">
+                <div className="sm:w-[200px]">
                     <p className={`${spaceGrotesk.className} text-[#737373] text-[16px]`}>SOCIALS</p>
                     <div className="flex flex-col gap-[9px] text-[#EBEBEB]">
                         <p>Instagram</p>
@@ -57,9 +57,9 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="flex gap-[677px] mt-[50px] mb-[30px] w-[1312px]">
+            <div className="flex gap-[10px] sm:gap-[677px] mt-[10px] sm:mt-[50px] mb-[30px] sm:w-[1312px]">
                 <p className="text-[13px] text-[#737373]">Copyright © 2022 Nura Operations Pty Ltd. All rights reserved.</p>
-                <div className="flex gpa-[20px] text-[13px] text-[#737373]">
+                <div className="flex gap-[20px] text-[13px] text-[#737373]">
                     <p>Privacy Policy</p>
                     <p>Terms of Use</p>
                     <p>Legal</p>
