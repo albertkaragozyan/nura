@@ -10,7 +10,7 @@ function Header() {
     const { cartNumber } = useCart();
     return (
         <header className="absolute top-0 z-10 w-[100%] flex justify-center items-center">
-            <div className="w-[1440px] flex justify-between items-center h-[80px] px-[30px]">
+            <div className="w-full max-w-[1440px] flex justify-between items-center h-[80px] px-[30px]">
                 <div className="flex gap-[20px] sm:gap-[44px] items-center">
                     <Link href="/">
                         <Image className="w-[70px] sm:w-[100px] mt-[1px] sm:mt-[4px]" src={nura} alt="nura" />

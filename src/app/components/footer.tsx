@@ -10,7 +10,7 @@ const spaceGrotesk = localFont({
 function Footer() {
     return (
         <div className="flex flex-col justify-center items-center bg-[#000000]">
-            <div className="flex mt-[40px] sm:mt-[90px] gap-[18px]">
+            <div className="flex flex-wrap justify-center mt-[40px] sm:mt-[90px] gap-[18px]">
                 <div className="flex flex-col gap-[10px] sm:gap-[30px] sm:w-[355px]">
                     <Image className="sm:w-[160px]" src={nura} alt="nura" />
                     <p className={` ${spaceGrotesk.className} text-[#FFFFFF] text-[16px] sm:text-[24px] w-[160px] sm:w-[311px]`}>Nura designs headphones tuned to you. Bringing you closer to music with personalised sound.</p>
@@ -57,9 +57,9 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="flex gap-[10px] sm:gap-[677px] mt-[10px] sm:mt-[50px] mb-[30px] sm:w-[1312px]">
+            <div className="flex flex-wrap gap-[10px] sm:w-full justify-between px-[20px] mt-[10px] sm:mt-[50px] mb-[30px] max-w-[1312px]">
                 <p className="text-[13px] text-[#737373]">Copyright © 2022 Nura Operations Pty Ltd. All rights reserved.</p>
-                <div className="flex gap-[20px] text-[13px] text-[#737373]">
+                <div className="flex flex-wrap gap-[10px] text-[13px] text-[#737373]">
                     <p>Privacy Policy</p>
                     <p>Terms of Use</p>
                     <p>Legal</p>

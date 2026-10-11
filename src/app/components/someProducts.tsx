@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { useCart } from "../components/CartContext";
 import Link from 'next/link';
+import AOS from "aos";
 
 const spaceGrotesk = localFont({
     src: "../fonts/SpaceGrotesk-Regular.ttf",
@@ -27,13 +28,17 @@ function SomeProducts() {
             .then((res) => setProducts(res))
     }, [])
 
+    useEffect(() => {
+        AOS.refreshHard();
+    }, [products]);
+
     const randomProducts = [...products].sort(() => Math.random() - 0.5).slice(0, 4);
 
     return (
         <div className="flex flex-col gap-[57px] mb-[100px]">
-            <div className="mt-[91px] flex items-baseline gap-[100px] sm:gap-[507px] justify-center">
+            <div className="mt-[91px] flex flex-wrap items-baseline gap-[20px] justify-center sm:justify-between sm:px-[20px]">
                 <div className={`${spaceGrotesk.className} text-white text-[30px] sm:text-[65px]`}>Featured discounts</div>
-                <Link href="/products" className={`${baiJamjuree.className} text-[#7DFB5D] text-[16px] cursor-pointer`}>WIEW ALL PRODUCTS <span className="text-[20px]">→</span></Link>
+                <Link href="/products" className={`${baiJamjuree.className} text-[#7DFB5D] text-[16px] cursor-pointer`}>VIEW ALL PRODUCTS <span className="text-[20px]">→</span></Link>
             </div>
             <div className="flex gap-[20px] justify-center flex-wrap">
                 {randomProducts.map((product) => {

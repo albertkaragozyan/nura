@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import localFont from "next/font/local";
 import { useSearchParams } from "next/navigation";
 import { useCart } from "../components/CartContext";
+import AOS from "aos";
 
 const baiJamjuree = localFont({
     src: "../fonts/BaiJamjuree-Regular.ttf",
@@ -25,6 +26,10 @@ export default function Products() {
             .then((res) => res.json())
             .then((res) => setProducts(res))
     }, [])
+
+    useEffect(() => {
+        AOS.refreshHard();
+    }, [products]);
 
     const filteredProducts = products.filter(
         (e: any) => e.name.toLowerCase().includes(query?.toLowerCase() || "")
