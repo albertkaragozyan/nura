@@ -15,7 +15,7 @@ function Footer() {
                     <Image className="sm:w-[160px]" src={nura} alt="nura" />
                     <p className={` ${spaceGrotesk.className} text-[#FFFFFF] text-[16px] sm:text-[24px] w-[160px] sm:w-[311px]`}>Nura designs headphones tuned to you. Bringing you closer to music with personalised sound.</p>
                 </div>
-                <div className="sm:w-[200px]">
+                <div className="sm:w-[140px] xl:w-[200px]">
                     <p className={`${spaceGrotesk.className} text-[#737373] text-[16px]`}>SHOP</p>
                     <div className="flex flex-col gap-[9px] text-[#EBEBEB]">
                         <p>NuraTrue Pro</p>
@@ -28,7 +28,7 @@ function Footer() {
                         <p>Subscription</p>
                     </div>
                 </div>
-                <div className="sm:w-[200px]">
+                <div className="sm:w-[140px] xl:w-[200px]">
                     <p className={`${spaceGrotesk.className} text-[#737373] text-[16px]`}>INFO</p>
                     <div className="flex flex-col gap-[9px] text-[#EBEBEB]">
                         <p>Why Nura?</p>
@@ -38,14 +38,14 @@ function Footer() {
                         <p>Patets</p>
                     </div>
                 </div>
-                <div className="sm:w-[200px]">
+                <div className="sm:w-[140px] xl:w-[200px]">
                     <p className={`${spaceGrotesk.className} text-[#737373] text-[16px]`}>SUPPORT</p>
                     <div className="flex flex-col gap-[9px] text-[#EBEBEB]">
                         <p>Help Centre</p>
                         <p>Contact Us</p>
                     </div>
                 </div>
-                <div className="sm:w-[200px]">
+                <div className="sm:w-[140px] xl:w-[200px]">
                     <p className={`${spaceGrotesk.className} text-[#737373] text-[16px]`}>SOCIALS</p>
                     <div className="flex flex-col gap-[9px] text-[#EBEBEB]">
                         <p>Instagram</p>
